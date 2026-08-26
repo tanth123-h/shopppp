@@ -72,3 +72,13 @@ GITHUB REPOSITORY
 https://github.com/tanth123-h/shopppp
 
 WebP versions are used to keep the GitHub repository and website lightweight while preserving the AI-generated artwork.
+
+FIXES IN THIS VERSION
+---------------------
+- Fixed category cards showing [object Object][c]
+- Fixed invisible text on white "Explore Gear" promo button
+- Improved AI logo presentation in navbar/footer
+- Tightened mobile navbar and responsive spacing
+- Improved small-screen button and stat layouts
+
+If Vercel is connected to GitHub, push this version to main and Vercel should redeploy automatically.

@@ -23,3 +23,55 @@ footer img{height:62px;width:auto;object-fit:contain;filter:none}
   .brand img{height:45px;width:auto}
   footer img{height:58px}
 }
+
+
+/* ---------- V3 bug fixes + responsive polish ---------- */
+.light{background:#fff!important;color:#0b1538!important}
+.light:hover{background:#0b1538!important;color:#fff!important}
+
+.brand{display:flex;align-items:center;gap:8px;min-width:max-content}
+.brandLogo{
+  width:48px;height:48px;border-radius:12px;overflow:hidden;display:grid;place-items:center;
+  background:#fff;box-shadow:0 4px 14px rgba(11,21,56,.08)
+}
+.brandLogo img{
+  width:100%!important;height:100%!important;object-fit:cover!important;
+  transform:scale(1.14);object-position:center
+}
+.brandText{
+  font-size:21px;font-weight:900;letter-spacing:-.04em;color:#0b1538
+}
+.footerBrand{display:flex;align-items:center;gap:10px}
+.footerBrand .brandText{color:#fff;font-size:24px}
+footer .brandLogo{width:52px;height:52px}
+footer .brandLogo img{filter:none!important}
+
+.categoryCard .icon{
+  font-size:34px;line-height:1;width:48px;height:48px;display:grid;place-items:center;
+  border-radius:14px;background:#f3f5f9
+}
+
+.productImage img{background:#eef1f6}
+
+@media(max-width:800px){
+  .nav{padding-left:18px;padding-right:18px}
+  .brandText{font-size:19px}
+  .brandLogo{width:43px;height:43px}
+}
+
+@media(max-width:560px){
+  .nav{padding:0 10px}
+  .brand{gap:5px}
+  .brandLogo{width:38px;height:38px;border-radius:9px}
+  .brandText{font-size:16px}
+  .actions button{width:32px;height:32px}
+  #searchBtn{display:none}
+  .heroBtns .btn{width:100%}
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);width:100%;gap:8px}
+  .stats div{align-items:center;text-align:center;padding:10px 4px;background:#fff;border-radius:12px}
+  .categoryCard .icon{width:42px;height:42px;font-size:29px}
+  .promo{position:relative}
+  .promo .bigBall{pointer-events:none;opacity:.20}
+  footer .brandLogo{width:44px;height:44px}
+  .footerBrand .brandText{font-size:20px}
+}
